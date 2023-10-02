@@ -1,6 +1,6 @@
 import api from "./api";
 
-const resource = "/tasks";
+const resource = "/api/v1/tasks";
 
 export const allTasks = () => api.get(resource);
 
