@@ -15,27 +15,33 @@ const routes = [
         path: "/tasks",
         component: TasksPage,
         name: 'tasks',
-        // meta: {
-        //     auth: true
-        // }
+        meta: {
+            auth: true
+        }
     },
     {
         path: "/login",
         component: LoginPage,
-        name: 'login'
+        name: 'login',
+        meta: {
+            guest: true
+        }
     },
     {
         path: "/register",
         component: RegisterPage,
-        name: 'register'
+        name: 'register',
+        meta: {
+            guest: true
+        }
     },
     {
         path: "/summary",
         component: SummaryPage,
         name: 'summary',
-        // meta: {
-        //     auth: true
-        // }
+        meta: {
+            auth: true
+        }
     },
     {
         path: "/:notFound(.*)",
